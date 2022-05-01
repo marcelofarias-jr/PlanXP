@@ -1,0 +1,284 @@
+$cor-primaria: #1e1e1e
+$cor-secundaria: #292929
+$cor-texto: #c3c3c3
+
+body 
+    background-color: $cor-primaria
+    a
+        text-transform: uppercase
+        color: $cor-texto
+        &:hover
+            font-weight: bold
+            color: $cor-texto
+            text-decoration: none
+header
+    display: none
+aside
+    width: 15%
+    height: 100vh
+    position: fixed
+    ul
+        list-style: none
+        margin-right: 50%
+        li
+            line-height: 5vh
+            display: flex
+            flex-direction: column
+            p   
+                padding-top: .1em
+                font-size: 3rem
+                color: $cor-secundaria
+            a
+                text-decoration: none
+                color: $cor-texto
+                position: fixed
+                left: 1em
+                font-weight: 400
+                &:hover
+                    color: $cor-texto
+                    font-weight: bold
+                    border-bottom: 1px solid $cor-texto
+    .navbar-brand
+        height: auto
+        margin-bottom: 2vh
+        padding-top: 5vh
+    .navbar
+        display: flex
+        flex-direction: column
+    .collapse
+        width: 100%
+        padding: 2em 0 2em 0em
+        justify-content: flex-end
+        align-items: center
+
+.fazemos
+    margin-left: 15%
+    width: 85%
+    height: 100%
+    color: $cor-texto
+    display: flex
+    p
+        font-size: .8rem
+    .fazemos__esquerda
+        width: 50%
+        height: 100vh
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding: 0em 3rem
+        .texto
+            position: relative
+            bottom: 6rem
+        .fundo
+            font-size:7rem
+            color: #292929
+            font-weight: bold
+        h1
+            position: relative
+            bottom: 18vh
+            left: 0
+            font-size:1rem
+        h2
+            position: relative
+            left: 17.5vw
+            bottom: 20vh
+            left: 0
+        h3
+            font-size: 1.1rem
+            font-weight: normal
+    .fazemos__direita
+        width: 50%
+        height: 100vh
+        display: flex
+        padding-top: 12% 
+        .fazemos__direita__item
+            width:25%
+            padding: 0 .5rem
+            p
+                margin-top: 1rem
+            .fazemos__direita__item__icone
+                border: 1px solid red
+                width: 10%
+            img
+                height: 8rem
+        .fazemos__direita__item__icone
+            width: 25%
+            padding-top: 6rem
+            padding-right: 1rem
+            a
+                font-size: .7rem
+                color: $cor-texto
+                &:hover
+                    font-weight: bold
+            img
+                height: 2rem
+                margin-bottom: .5rem
+
+.news
+    margin-left: 15%
+    width: 85%
+    height: 100%
+    color: $cor-texto
+    padding: 0em 3rem
+    display: inline-block
+    .fundo
+        font-size:7rem
+        color: #292929
+        font-weight: bold
+    h1
+        position: relative
+        bottom: 18vh
+        left: 0
+        font-size:1rem
+    h2
+        position: relative
+        bottom: 20vh
+        left: 0
+        display: inline-block
+    .news__conteudo
+        display: flex
+        flex-direction: row
+        img
+            width: 12vw
+    .news__titulo
+        height: 30vh
+        a
+            position: relative
+            bottom: 20vh
+            left: 1rem
+    .news__conteudo__itens
+        width: 20%
+        height: 25%
+        background-color: $cor-secundaria
+        display: flex
+        flex-direction: column
+        margin: .5em
+        img
+            width: 100%
+        span
+            padding: 0 0.3rem
+            margin: .5rem auto
+            max-width: auto
+            text-align: center
+            background-color: $cor-texto
+            margin-left: .5rem
+            color: $cor-primaria
+            text-transform: uppercase
+            font-size: .7rem
+        h3  
+            height: 4.5rem
+            font-size: 1rem
+            padding: .5rem
+        p
+            padding: .5rem
+        a
+            padding: .5rem
+
+.contato
+    margin-left: 15%
+    width: 85%
+    height: 100%
+    display: flex
+    flex-direction: row
+    color: $cor-texto
+    font-size: .8rem
+    h1
+        position: relative
+        bottom: 20vh
+    .fundo
+        font-size:7rem
+        color: #292929
+        font-weight: bold
+    .contato__esquerda
+        width: 50%
+        position: relative
+        padding: 0em 4em
+        .contato__esquerda__conteudo
+            position: relative
+            bottom: 6rem
+            textarea
+                background-color: $cor-primaria
+                color: white
+            input
+                color: white
+                background-color: $cor-primaria
+                border: 1px solid $cor-texto
+                width: 100%
+            .formulario
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                input
+                    color: white
+                    max-width: 16rem
+                    padding-right: 1rem
+    .contato__direita
+        width: 50%
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        align-items: flex-start
+        .contato__direita__esquerda
+            width: 30%
+            padding: 0 1rem
+            .contato__direita__esquerda__cima
+                padding-bottom: 2rem
+                .icones
+                    display: flex
+                    justify-content: space-between
+                    i   
+                        font-size: 2rem
+                        color: $cor-texto
+                        border-radius: 2rem
+        .contato__direita__centro
+            width: 30%
+            padding: 0 1rem
+            .contato__direita__centro__cima
+                padding-bottom: 2rem
+        .contato__direita__direita
+            width: 30%
+            padding: 0 1rem
+            .contato__direita__direita__cima
+                padding-bottom: 2rem
+
+/**************************************** RESPONSIVIDADE *****************************/
+@media (max-width: 990px)
+    header
+        margin: 0
+        height: 8rem
+        width: 100%
+        align-items: center
+        display: flex
+        justify-content: space-between
+
+        .navbar
+            border-bottom: 1px solid $cor-texto
+            width: 100%
+            display: flex
+            justify-content: space-around
+            background-color: $cor-primaria
+            .navbar-nav
+                padding-right: 8rem
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                align-content: flex-end
+    aside
+        display: none
+    .fazemos
+        display: none
+    .news
+        width: 100%
+        .news__titulo
+            width: 100%
+            h2
+                width: 100%
+        .news__conteudo
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            .news__conteudo__itens
+                width: 45%
+    .contato
+        display: none
+    
