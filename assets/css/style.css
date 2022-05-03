@@ -360,9 +360,12 @@ aside .collapse {
     display: none;
   }
 }
-@media (max-dith: 415px) {
-  .news .news__conteudo__itens {
-    width: 40%;
+@media (max-width: 419px) {
+  .news .news__conteudo {
+    width: 100%;
+  }
+  .news .news__conteudo .news__conteudo__itens {
+    width: 90%;
   }
 }
 
