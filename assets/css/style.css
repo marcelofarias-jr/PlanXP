@@ -175,7 +175,7 @@ aside .collapse {
   width: 12vw;
 }
 .news .news__titulo {
-  height: 30vh;
+  height: 15rem;
 }
 .news .news__titulo a {
   position: relative;
@@ -188,7 +188,7 @@ aside .collapse {
   background-color: #292929;
   display: flex;
   flex-direction: column;
-  margin: 0.5em;
+  margin: 0.5rem;
 }
 .news .news__conteudo__itens img {
   width: 100%;
@@ -211,6 +211,10 @@ aside .collapse {
 }
 .news .news__conteudo__itens p {
   padding: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
 .news .news__conteudo__itens a {
   padding: 0.5rem;
@@ -354,6 +358,11 @@ aside .collapse {
 
   .contato {
     display: none;
+  }
+}
+@media (max-dith: 415px) {
+  .news .news__conteudo__itens {
+    width: 40%;
   }
 }
 
